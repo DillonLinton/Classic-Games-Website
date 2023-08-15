@@ -1,0 +1,75 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.game-container {
+    position: relative;
+    width: 480px;
+    height: 640px;
+    border: 2px solid #FFF;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    background-color: #000;
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #DDD;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+#spaceInvadersCanvas {
+    border: 1px solid white;
+}
+
+button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

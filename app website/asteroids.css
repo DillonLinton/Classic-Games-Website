@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+canvas {
+    border: 1px solid white;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#restartButton, #gameOverScreen button, #homeButton {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#restartButton:hover, #gameOverScreen button:hover, #homeButton:hover {
+    background-color: #555;
+}

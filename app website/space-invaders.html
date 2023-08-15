@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Space Invaders Clone</title>
+    <link href="space-invaders.css" rel="stylesheet"/>
+</head>
+<body onload="initializeGame();">
+    <div class="game-container">
+        <button class="home-button" onclick="window.location.href='index.html'">Home</button>
+        <div id="startScreen">
+            <h2>Space Invaders</h2>
+            <p>Use the arrow keys to move and the space bar to shoot.</p>
+            <button onclick="startGame();">Start Game</button>
+        </div>
+        <div id="gameOverScreen" style="display: none;">
+            <h2>Game Over</h2>
+            <button onclick="restartGame();">Restart Game</button>
+        </div>
+        <canvas height="640" id="spaceInvadersCanvas" width="480"></canvas>
+    </div>
+    <script src="space-invaders.js"></script>
+    <script>
+        function initializeGame() {
+            document.getElementById("startScreen").style.display = "block";
+        }
+
+        function startGame() {
+            document.getElementById("startScreen").style.display = "none";
+            document.getElementById("gameOverScreen").style.display = "none";
+        }
+
+        function restartGame() {
+            document.location.reload();
+        }
+    </script>
+</body>
+</html>
